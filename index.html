@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>sampleMap</title>
+    <style>
+        #map {
+            width: 1000px;
+            height: 400px;
+            align-items: center;
+            margin: 50px auto;
+        }
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin: 50px auto;
+        }
+    </style>
+
+</head>
+
+<h1>恵比寿ガーデンプレイス</h1>
+
+<div id="map"></div>
+
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBR16AQu_6ziJTPcOlfoJNjsVwEFE54ItU&language=ja"></script>
+
+<script>
+    let MyLatLng = new google.maps.LatLng(35.6424967, 139.7138062);
+    let Options = {
+        zoom: 15,
+        center: MyLatLng,
+        mapTypeId: 'roadmap'
+    };
+    let map = new google.maps.Map(document.getElementById('map'),Options);
+    
+    
+
+</script>
+
+</script>
+
+<body>
+    
+</body>
+</html>
